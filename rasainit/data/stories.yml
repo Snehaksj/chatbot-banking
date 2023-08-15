@@ -1,0 +1,142 @@
+version: "3.1"
+
+stories:
+- story: greet and ask about opening an account
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: open_account
+    - action: utter_open_account
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_open_account
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about credit card requirements
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: credit_card_requirements
+    - action: utter_credit_card_requirements
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_credit_card_requirements
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about transferring funds
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: transfer_funds
+    - action: utter_transfer_funds
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_transfer_funds
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about savings account interest rate
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: savings_account_interest_rate
+    - action: utter_savings_account_interest_rate
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_savings_account_interest_rate
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about resetting online banking password
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: reset_password
+    - action: utter_reset_password
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_reset_password
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about wire transfer fees
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: wire_transfer_fees
+    - action: utter_wire_transfer_fees
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_wire_transfer_fees
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about mobile check deposit process
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mobile_check_deposit
+    - action: utter_mobile_check_deposit
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_mobile_check_deposit
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about disputing a transaction
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: dispute_transaction
+    - action: utter_dispute_transaction
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_dispute_transaction
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about ATM withdrawal limit
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: withdrawal_limit
+    - action: utter_withdrawal_limit
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_withdrawal_limit
+    - intent: affirmation
+    - action: utter_great
+
+- story: greet and ask about setting up automatic bill payments
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: automatic_bill_payments
+    - action: utter_automatic_bill_payments
+    - action: utter_understood_q
+    - intent: deny
+    - action: utter_detailed_automatic_bill_payments
+    - intent: affirmation
+    - action: utter_great
+
+- story: fallback for unmatched questions
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: out_of_scope
+    - action: utter_default_response
+
+- story: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: ask if the chatbot is a bot
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+

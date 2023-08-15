@@ -1,0 +1,196 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirmation
+  - deny
+  - open_account
+  - credit_card_requirements
+  - transfer_funds
+  - savings_account_interest_rate
+  - reset_password
+  - wire_transfer_fees
+  - mobile_check_deposit
+  - dispute_transaction
+  - withdrawal_limit
+  - automatic_bill_payments
+  - are_you_a_bot
+  - out_of_scope
+  - bot_challenge
+  - great
+
+# entities:
+#   - name
+#   - number
+#   - feedback
+
+# slots:
+#   name:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: name
+#   number:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: number
+#   feedback:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: feedback
+# slots:
+#   name:
+#     type: text
+
+#   number:
+#     type: text
+#   feedback:
+#     type: text
+
+responses:
+  utter_greet:
+    - text: "Hey! How can I help you?"
+
+  utter_great:
+    - text: "Glad it helped."
+    - text: "Awesome!"
+    - text: "Nice!"
+    - text: "great!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_open_account:
+    - text: "To open a bank account, you can visit your nearest branch of the desired bank with the required documents."
+  
+  utter_detailed_open_account:
+    - text: "Opening a bank account is a simple process. First, research different banks to find one that suits your needs. Choose the account type (e.g., checking or savings) you want to open. Gather required documents like ID and proof of address. Visit the bank, complete an application form, and provide the necessary documents. If needed, make an initial deposit. Review account terms and conditions, sign documents, and receive your account details. Enjoy using your new account for deposits, withdrawals, and managing finances. Remember, specific steps may vary, so check with the bank for precise information."
+
+  utter_credit_card_requirements:
+    - text: "To apply for a credit card, you typically need to have a good credit score and provide income proof."
+  
+  utter_detailed_credit_card_requirements:
+    - text: "Applying for a credit card involves a few essential steps. First, research various credit card options to find one that matches your needs and financial situation. Check factors like interest rates, rewards, fees, and credit limits. Once you've chosen a suitable card, fill out the credit card application, providing accurate personal and financial information. The bank or credit card issuer will review your application and assess your creditworthiness based on your credit history, income, and other factors. If approved, you'll receive your new credit card in the mail, and you can start using it for purchases and building credit. Remember to use your credit card responsibly, making timely payments and keeping your credit utilization low."
+
+  utter_out_of_scope:
+    - text: "I'm sorry, I don't have the information you're looking for."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_transfer_funds:
+    - text: "To transfer funds, you can log in to your online banking account and navigate to the 'Transfer' section."
+
+  utter_detailed_transfer_funds:
+    - text: "Transferring funds is a simple process. Choose your preferred method, such as online banking or visiting a branch. Provide the recipient's account details and the transfer amount. Verify the information and confirm the transfer. You'll receive a confirmation, and the funds will be transferred swiftly. Double-check recipient details for accuracy to ensure a smooth transaction."
+
+  utter_savings_account_interest_rate:
+    - text: "The interest rate for our savings accounts is currently 2% per annum."
+
+  utter_detailed_savings_account_interest_rate:
+    - text: "Savings account interest rates in Indian banks like HDFC, ICICI, and SBI vary based on the type of account and the balance maintained. As of September 2021, HDFC Bank's regular savings account offered an interest rate of 3.00% to 3.50% per annum, while ICICI Bank's regular savings account had an interest rate of 3.00% to 3.50% per annum. On the other hand, SBI's regular savings account provided an interest rate of around 2.70% per annum. Interest rates may be tiered, and it's essential to check with the respective banks for the latest rates."
+
+  utter_reset_password:
+    - text: "To reset your online banking password, you can click on the 'Forgot Password' link on the login page."
+
+  utter_detailed_reset_password:
+    - text: "Resetting your bank password is a simple process to ensure online banking security. Visit the official website or app and click 'Forgot Password.'' Provide account details and verify your identity using a code sent via SMS or email. Create a new strong password, confirm it, and save the changes. Keep the password confidential and consider multi-factor authentication for added security. Contact customer support for assistance, if needed."
+
+  utter_wire_transfer_fees:
+    - text: "The wire transfer fees vary depending on the destination and amount. Please check our website or contact our support team for detailed information."
+
+  utter_detailed_wire_transfer_fees:
+    - text: "Wire transfer fees are charges imposed by banks for electronically sending money from one account to another, either domestically or internationally. Domestic wire transfer fees vary based on the bank and transfer method. International wire transfer fees are higher due to additional processing and currency conversion. Fees may be flat or percentage-based, and intermediary banks may apply additional charges in international transfers. Online wire transfers often have lower fees than in-branch transactions. Consider fee waivers and compare options to find the most cost-effective transfer method."
+    
+  utter_mobile_check_deposit:
+    - text: "To deposit a cheaque using your mobile device, you can open our mobile banking app and follow the instructions for check deposit."
+
+  utter_detailed_mobile_check_deposit:
+    - text: "Mobile check deposit is a convenient way to deposit checks using your smartphone or mobile device. Download your bank's app, log in or register, and find the 'Mobile Check Deposit' feature. Enter check details, endorse the check, and capture clear images of both sides. Review and confirm the deposit request. Funds are usually available within one to three business days. Retain the physical check temporarily. Mobile check deposit offers secure and time-saving banking from anywhere. Contact customer support for any assistance."
+
+  utter_dispute_transaction:
+    - text: "If you need to dispute a transaction, please contact youre concerned bank."
+
+  utter_detailed_dispute_transaction:
+    - text: "Disputing a transaction in India involves the following steps: 1) Review your statement for unauthorized charges. 2) Contact your bank or credit card issuer immediately to report the transaction. 3) Initiate a formal dispute process. 4) Temporary credit may be provided during the investigation. 5) The bank investigates the transaction, including contacting the merchant. 6) You'll be informed of the resolution, and if found unauthorized, the charge is reversed. 7) If unsatisfied, you can appeal or escalate the matter to higher authorities or the banking ombudsman. Act promptly and keep all communication and documentation related to the dispute."
+
+  utter_withdrawal_limit:
+    - text: "The daily ATM withdrawal limit is set at 20,000 for standard accounts."
+
+  utter_detailed_withdrawal_limit:
+    - text: "ATM withdrawal limits in India vary based on the type of account and bank policies. For standard savings accounts, the daily limit is typically around Rs. 20,000 to Rs. 25,000. Premium savings accounts may have higher limits, ranging from Rs. 30,000 to Rs. 50,000 or more. Business accounts often offer higher withdrawal limits, usually Rs. 50,000 or above. International withdrawals have separate lower limits, typically around Rs. 10,000 to Rs. 25,000 per day. Check with your bank for the specific withdrawal limits applicable to your account."
+
+  utter_automatic_bill_payments:
+    - text: "To set up automatic bill payments, you can log in to your online banking account and navigate to the 'Bill Payments' section."
+  
+  utter_detailed_automatic_bill_payments:
+    - text: "Automatic bill payments, or autopay, offer a hassle-free way to settle recurring bills automatically. To get started, enroll with your bank or service provider, link your preferred payment method, and select bills for autopay. Choose the payment amount and date, ensuring sufficient funds. Payments are processed automatically each month, saving time and preventing late fees. Review bills periodically for accuracy and enjoy the convenience of timely, paperless transactions. However, stay vigilant for unexpected charges and maintain financial control."
+
+  utter_default_response:
+    - text: "I'm sorry, I didn't understand. Can you please rephrase your request?"
+
+  utter_understood_q:
+    - text: "Was the explanation okay or do you want a detailed explanation?"
+
+  # utter_ask_name:
+  #   - text: "May I know your name?"
+  
+  # utter_ask_number:
+  #   - text: "Please enter your mobile number"
+
+  # utter_ask_feedback:
+  #   - text: "Enter your feedback!"
+
+  # utter_final_feedback:
+  #   - text: "Before you leave do you wish to leave a feedback?"
+
+actions:
+  - utter_greet
+  - utter_great
+  - utter_goodbye
+  - utter_open_account
+  - utter_detailed_open_account
+  - utter_credit_card_requirements
+  - utter_detailed_credit_card_requirements
+  - utter_out_of_scope
+  - utter_iamabot
+  - utter_transfer_funds
+  - utter_detailed_transfer_funds
+  - utter_savings_account_interest_rate
+  - utter_detailed_savings_account_interest_rate
+  - utter_reset_password
+  - utter_detailed_reset_password
+  - utter_wire_transfer_fees
+  - utter_detailed_wire_transfer_fees
+  - utter_mobile_check_deposit
+  - utter_detailed_mobile_check_deposit
+  - utter_dispute_transaction
+  - utter_detailed_dispute_transaction
+  - utter_withdrawal_limit
+  - utter_detailed_withdrawal_limit
+  - utter_automatic_bill_payments
+  - utter_detailed_automatic_bill_payments
+  - utter_default_response
+  - utter_understood_q
+  # - utter_ask_name
+  # - utter_ask_number
+  # - utter_ask_feedback
+  # - utter_final_feedback
+  # - action_save_data
+  #- Form_Info
+  
+# forms:
+#   Form_Info:
+#     required_slots:
+#       - name
+#       - number
+#       - feedback
+      
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+  

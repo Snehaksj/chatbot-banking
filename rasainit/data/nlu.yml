@@ -1,0 +1,174 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirmation
+  examples: |
+    - It was clear
+    - No explanation is needed
+    - I could understand
+    - yes
+    - yup
+    - yeah
+    - absolutely
+    - sure
+    - alright
+    - ok
+    - yep
+    - correct
+    - that's right
+    - understood
+    - got it
+    - of course
+    - indeed
+    - you bet
+    - affirmative
+    - certainly
+
+- intent: deny
+  examples: |
+    - I need a detailed explanation
+    - can u explain
+    - no
+    - nope
+    - not really
+    - I don't understand
+    - I don't get it
+    - unclear
+    - not clear
+    - not sure
+    - I didn't understand
+    - I don't know
+    - I'm confused
+    - what?
+    - huh
+    - negative
+    - not at all
+    - absolutely not
+    - not correct
+    - that's wrong
+
+- intent: open_account
+  examples: |
+    - How can I open a new bank account?
+    - What is the process for opening a bank account?
+    - Can you guide me on how to start a new bank account?
+    - I want to create a new bank account. What should I do?
+    - How do I go about opening an account with your bank?
+
+- intent: credit_card_requirements
+  examples: |
+    - What are the requirements to apply for a credit card?
+    - What documents do I need to get a credit card?
+    - Can you tell me the prerequisites for applying for a credit card?
+    - What is the eligibility criteria for obtaining a credit card?
+    - What are the necessary conditions for credit card application?
+
+- intent: transfer_funds
+  examples: |
+    - How can I transfer money between my accounts?
+    - What is the procedure for transferring funds within my accounts?
+    - Can you explain how to move money from one account to another?
+    - I want to send money from my savings to my checking account. How do I do that?
+    - How do I perform an internal transfer of funds?
+
+- intent: savings_account_interest_rate
+  examples: |
+    - What is the current interest rate on savings accounts?
+    - How much interest do savings accounts earn?
+    - Can you provide information on the interest rates for savings accounts?
+    - What is the annual percentage yield (APY) for savings accounts?
+    - What are the interest rates offered for savings deposits?
+    
+- intent: reset_password
+  examples: |
+    - I forgot my online banking password. How can I reset it?
+    - What should I do if I can't remember my online banking password?
+    - Can you guide me through the process of resetting my password?
+    - How do I regain access to my account if I've forgotten my password?
+    - I'm locked out of my online banking. How can I reset my password?
+
+- intent: wire_transfer_fees
+  examples: |
+    - What are the fees associated with international wire transfers?
+    - How much does it cost to send money internationally?
+    - Can you provide information on the charges for wire transfers to another country?
+    - What is the fee structure for outbound international wire transfers?
+    - How much will I be charged for making an international transfer?
+
+- intent: mobile_check_deposit
+  examples: |
+    - cheaque
+    - check
+    - How can I deposit a cheaque using my mobile phone?
+    - Can you explain the process of depositing cheaque via mobile banking?
+    - What are the steps for using mobile cheaque deposit?
+    - Is it possible to take a picture of a check to deposit it?
+    - Can I use my phone's camera to deposit checks?
+
+- intent: dispute_transaction
+  examples: |
+    - How do I dispute a transaction on my account?
+    - What should I do if I see an unauthorized transaction in my statement?
+    - Can you guide me on the process of reporting a fraudulent transaction?
+    - I want to raise a dispute for a charge that I didn't make. What should I do?
+    - How can I resolve an error or discrepancy in my transaction history?
+
+- intent: withdrawal_limit
+  examples: |
+    - What is the daily withdrawal limit from ATMs?
+    - How much cash can I withdraw from an ATM per day?
+    - Can you tell me the maximum amount I can withdraw from an ATM in a day?
+    - Is there a limit on how much money I can take out from ATMs daily?
+    - What are the restrictions on cash withdrawals from ATMs?IntentUsecontinueChtGPT
+
+- intent: automatic_bill_payments
+  examples: |
+    - How can I set up automatic bill payments?
+    - What is the process for scheduling automatic payments for bills?
+    - Can you guide me on how to automate my bill payments?
+    - How do I enroll in automatic bill payment services?
+    - Is there a way to have my bills paid automatically every month?
+
+- intent: out_of_scope
+  examples: |
+    - Can you help me with something unrelated?
+    - This is not related to banking.
+    - I have a question about a different topic.
+    - I need assistance with something else.
+    - Sorry, I don't have an answer to that.
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
